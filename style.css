@@ -1,0 +1,127 @@
+/*
+font info:
+    family - Helvetica, Arial, sans-serif
+    line-height - 1.6
+
+
+colors:
+    light gray - ##eee
+    gray - #dddddd
+    yellow - #ffd24a
+    orange - #ff8523
+    blue - #1fabe5
+    dark blue - #046c97
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border-color: #ffd24a;
+  border-style: solid;
+  border-width: 3px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  height: 250px;
+  background-color: #ff8523;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+header a{
+  padding-bottom: 30px;
+}
+
+#page_content {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#logo {
+  display: inline-block;
+
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 40px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div section {
+    border-bottom: 5px solid #dddddd;
+}
+
+section h2 {
+  color: #1fabe5;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 24px;
+}
+
+h3 {
+  color: #1fabe5;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+ul {
+  font-weight: bold;
+  font-size: 24px;
+
+}
+
+section a {
+  color: #1fabe5;
+}
+
+tr {
+
+}
+
+tr td {
+  border: 1px solid #1fabe5;
+  height: 0px;
+  width: 150px;
+  padding-left: 10px;
+}
+
+tr td:nth-of-type(2){
+  width: 20px;
+  padding: 10px 10px;
+}
+
+tr td:nth-of-type(3){
+  width: 25px;
+}
+tr td:nth-of-type(4){
+  width: 30px;
+}
+tr td:nth-of-type(5){
+  width: 160px;
+}
+
+th {
+  background-color: #1fabe5;
+  vertical-align: middle;
+
+}
+
+img td {
+  height: 25px;
+  width: 25px;
+}
