@@ -94,6 +94,10 @@ ul {
 section a {
   color: #1fabe5;
 }
+
+table {
+  border-collapse: collapse;
+}
 /*height of picures in table*/
 td img {
   height: 80px;
