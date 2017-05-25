@@ -6,7 +6,7 @@ font info:
 
 colors:
     light gray - ##eee
-    gray - #dddddd
+    gray - #dddddd  #81969D
     yellow - #ffd24a
     orange - #ff8523
     blue - #1fabe5
@@ -15,8 +15,14 @@ colors:
 * {
   box-sizing: border-box;
 }
+/*outer grey border*/
+html {
+  background-color: #81969D;
+  padding: 10px 125px 50px 125px;
+}
 
 body {
+  background-color: white;
   border-color: #ffd24a;
   border-style: solid;
   border-width: 3px;
@@ -24,32 +30,21 @@ body {
   line-height: 1.6;
   padding-bottom: 30px;
 }
-
+/*orange header*/
 header {
   height: 250px;
   background-color: #ff8523;
   font-size: 24px;
   padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 30px;
 }
-
-header a{
-  padding-bottom: 30px;
-}
-
-#page_content {
-  padding-top: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 #logo img{
-
   height: 80px;
   width: 300px;
   padding-top: 10px;
 }
-
+/*links inside header*/
 nav a {
   display: inline-block;
   padding: 10px 40px;
@@ -61,12 +56,18 @@ nav a {
   font-weight: bold;
   font-size: 24px;
 }
-
+/*starting at top of body*/
+#page_content {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/*add grey lines*/
 div section {
   padding-bottom: 60px;
-    border-bottom: 5px solid #dddddd;
+  border-bottom: 5px solid #EEEEEE;
 }
-
+/*Table and Puppy love headings*/
 section h2 {
   color: #1fabe5;
   font-size: 36px;
@@ -74,9 +75,10 @@ section h2 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: lighter;
 }
-
+/*Why do we love puppies*/
 h3 {
   color: #1fabe5;
   font-size: 24px;
@@ -88,16 +90,16 @@ ul {
   font-size: 24px;
 
 }
-
+/*change anchor link color*/
 section a {
   color: #1fabe5;
 }
-
+/*height of picures in table*/
 td img {
   height: 80px;
   width: 80px;
 }
-
+/*table header row, bcgrnd blue darker blue border*/
 thead tr td{
   height: 70px;
   width: 200px;
@@ -127,12 +129,12 @@ thead tr td:nth-of-type(4){
 thead tr td:nth-of-type(5){
   width: 500px;
 }
-
+/*table body white background black text lighter blue border*/
 tbody tr td{
   height: 120px;
   width: 250px;
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: lighter;
   border: 1px solid #1fabe5;
   padding-left: 15px;
@@ -155,10 +157,67 @@ tbody tr td:nth-of-type(4){
 tbody tr td:nth-of-type(5){
   width: 550px;
 }
-
+/*orange box with first and last name*/
 .name {
   background-color: #ff8523;
+  width: 850px;
+  height: 100px;
   color: white;
-  padding: 20px 10px 20px 20px;
+  padding: 20px 60px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 20px 30px 40px 30px;
+}
+/*white boxes inside orange box*/
+input {
+  width: 250px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*left margin for Last Name text in orange box*/
+label[for="last_name"] {
+  margin-left: 20px;
+}
+/*margin for Favorite Breed text*/
+.city_container {
+  margin-bottom: 40px;
+}
+/*font for Favorite Breed and Why do you Love Puppies*/
+label[for=city], label[for=bio] {
+  font-weight: bold;
+  padding-left: 30px;
+}
+/*drop down list arrows need to be grey, still researching
+#city {
+  background-color: white;
+}
 
+option {
+  background-color: #EEEEEE;
+}
+*/
+textarea {
+  width: 850px;
+  height: 250px;
+  margin: 20px 30px 40px 30px;
+  padding-top: 10px;
+  padding-left: 8px;
+  font-size: 20px;
+  font-weight: lighter;
+  border-color: #1fabe5;
+}
+
+#submit_button {
+  width: 120px;
+  height: 60px;
+  background-color: #1fabe5;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: -10px;
+  border-style: none;
+  border-radius: 8px;
 }
